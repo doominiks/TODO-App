@@ -1,0 +1,42 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+li {
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    padding-left: 5px;
+    animation-duration: 1s;
+    animation-name: animation;
+    margin-bottom: 5px;
+}
+
+li:nth-child(2n) {
+    background-color: #2E2E2E;
+}
+
+li:nth-child(2n+1) {
+    background-color: #212121;
+}
+
+
+@keyframes animation {
+    0% {
+        visibility: visible;
+        transform: rotateX(180deg) perspective(500px);
+    }
+
+    70% {
+        visibility: visible;
+        transform: rotateX(-20deg);
+    }
+
+    100% {
+        visibility: visible;
+        transform: rotateX(0deg);
+    }
+}
